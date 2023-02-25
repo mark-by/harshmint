@@ -47,7 +47,6 @@
         font-style: normal;
         font-weight: 700;
         font-size: 120px;
-        line-height: 141px;
         color: rgba(255, 255, 255, 0.7);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -56,25 +55,38 @@
         font-style: normal;
         font-weight: 700;
         font-size: 50px;
-        line-height: 59px;
-
         color: rgba(0, 0, 0, 0.1);
     }
 
     .contact-info {
         position: absolute;
+        width: 100%;
+        text-align: center;
         left: 50%;
         bottom: 20px;
         transform: translate(-50%, 0);
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
-        line-height: 38px;
 
         color: rgba(0, 0, 0, 0.3);
     }
 
     .hint {
         color: rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-width: 500px) {
+        .main-info__logo {
+            font-size: 40px;
+        }
+
+        .main-info__text {
+            font-size: 24px;
+        }
+
+        .contact-info {
+            font-size: 16px;
+        }
     }
 </style>
